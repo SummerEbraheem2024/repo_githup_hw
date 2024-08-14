@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استارة تاكيد الحجز</title>
+     <link rel="stylesheet" href="style_main.css">
+     <style>
+        label{
+            font-size: large;
+        }
+     </style>
+</head>
+<body>
+    <div style="margin: 2px;" id="seend">
+        <section id="content">
+        <form action="index.html" method="get" autocomplete="on" enctype="multipart/form-data">
+            <fieldset>
+                <legend><h4>استمارة تاكيد طلب حجز</h4></legend>
+                <div>
+                    <div>
+                        <label for="cos_name">اسم الزبون:</label>
+                        <input type="text" required id="cos_name" placeholder="اكتب اسمك">
+                    </div>
+                    <div>
+                        <label for="cout_num">رقم البطاقة:</label>
+                        <input type="number" maxlength="14" min="20" required id="cout_num"> 
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="cou_img">صوة الهوية</label>
+                        <input type="file" id="cou_img">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="cou_email">البريد الالكتروني:</label>
+                        <input type="email" required id="cou_email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <label for="cou_phon">رقم الهاتف:</label>
+                        <input type="tel" required id="cou_phon" placeholder="phone number">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="date_input">تاريخ الحجز:</label>
+                        <input type="date" required id="date_input"></div>
+                    <div>
+                        <label for="cou_date">مدة الحجز</label>
+                        <select id="cou_date">
+                            <option value="1day">1day</option>
+                            <option value="2day">2day</option>
+                            <option value="1wek">1wek</option>
+                            <option value="1month">1month</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="dd">
+                    <big>النوع الحجوزات:</big><br>
+                    <input type="checkbox" value="s1" id="pro1">
+                    <label for="pro1">فستان ابيض</label><br>
+                    <input type="checkbox" value="s2" id="pro2">
+                    <label for="pro2">فستان خطوبة</label><br>
+                    <input type="checkbox" value="s3" id="pro3">
+                    <label for="pro3">فستان سهره</label><br>
+                    <input type="checkbox" value="s4" id="pro4">
+                    <label for="pro4">فستان شعبي</label><br>
+                </div>
+                <div>
+                    <label>رسالة</label>
+                    <textarea name="message" rows="6" cols="50" placeholder="اكتب ملاحظتك هناء....."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="تسجيل" id="register">
+                    <input type="reset" value="الغاء" id="cancle">
+                    <button id="edit" >تعديل</button>
+                    <button id="show" >عرض</button>
+                    <button id="print" >طباعة فاتورة</button>
+                </div>
+
+            </fieldset> 
+
+        </form>
+    </section>
+    
+    </div>
+</body>
+</html>
